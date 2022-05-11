@@ -1,4 +1,4 @@
-#Voici l'objectif du projet: 
+# Voici l'objectif du projet: 
 
 - Vous avez 2 piles nommées a et b.
 - Au début :
@@ -17,6 +17,8 @@
 	- rrb (reverse rotate b) : Décale vers le bas tous les éléments de la pile b de 1. Le dernier élément devient le premier.
 	-rrr : rra et rrb en même temps.
 	
-#Utilisation:
+# Utilisation:
+Faites `make all` pour build les binaires.
+Le programme `push_swap` permet de trier une pile passée en paramètres tandis que `checker` permet de vérifier les résultats du tri.
 Pour vérifier le résultat du tri: `arg=$(sh gen.sh 500); ./push_swap $arg | ./checker $arg`
 Pour compter le nombre d'opérations utilisées :`arg=$(sh gen.sh 500); ./push_swap $arg | wc -l`
